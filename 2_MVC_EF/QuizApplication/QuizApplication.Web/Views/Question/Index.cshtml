@@ -1,4 +1,13 @@
-﻿<div class="text-center">
+﻿@model IEnumerable<QuizApplication.Domain.Category>
+
+@foreach (var category in Model)
+{
+    <a href="/Question/QuestionsInCategory/@category.Id">
+        @category.Name
+    </a>
+}
+
+<div class="text-center">
     <h1 class="display-4">Choose a category:</h1>
 </div>
 <div class="row">

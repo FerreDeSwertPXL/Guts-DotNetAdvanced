@@ -21,7 +21,7 @@ namespace QuizApplication.Web.Controllers
 
         public IActionResult About()
         {
-            return null;
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,41 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: -1px; /* Prevent double borders */
+}
+
+.list-group-item:hover {
+    background-color: #f5f5f5;
+}
+
+.badge {
+    color: white;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

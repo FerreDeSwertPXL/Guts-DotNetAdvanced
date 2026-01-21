@@ -88,10 +88,10 @@ namespace Guts.Tests
             AssertCallsSutMethodAndUsesAssertThatSyntax(methodBody);
 
             Assert.That(methodBody, Contains.Substring("Assert.That("), "The test should use the Assert.That syntax.");
-            Assert.That(methodBody, Contains.Substring("Throws."), "The test should check if the tested method throws an ArgumentException");
+            Assert.That(methodBody, Contains.Substring("Assert.Throws<ArgumentException>"), "The test should check if the tested method throws an ArgumentException");
             Assert.That(methodBody, Contains.Substring("ArgumentException"), "The test should check if the tested method throws an ArgumentException");
-            Assert.That(methodBody, Contains.Substring(".Message."), "The test should check if message of the thrown exception contains the text '1-3999'.");
-            Assert.That(methodBody, Contains.Substring("1-3999"), "The test should check if message of the thrown exception contains the text '1-3999'.");
+            Assert.That(methodBody, Contains.Substring(".Message"), "The test should check if message of the thrown exception contains the text '1-3999'.");
+            Assert.That(methodBody, Contains.Substring("1 and 3999"), "The test should check if message of the thrown exception contains the text '1 and 3999'.");
         }
 
         [MonitoredTest]

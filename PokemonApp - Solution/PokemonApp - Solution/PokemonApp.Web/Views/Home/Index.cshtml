@@ -1,0 +1,14 @@
+﻿@model IList<Pokemon>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pokemon overview</h1>
+    <ul class="list-group">
+        @foreach (Pokemon pokemon in Model)
+        {
+            <li class="list-group-item">@pokemon.Name - @pokemon.Type (level @pokemon.Level)</li>
+        }
+    </ul>
+</div>

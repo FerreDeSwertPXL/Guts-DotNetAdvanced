@@ -12,9 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 /* Add DB Context here */
-
+builder.Services.AddDbContext<QuizDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 /* Add services for the DI here! */
+builder.Services.AddScoped<IQuizService, QuizService>();
+builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
+builder.Services.AddSingleton<ICategoryRepository, InMemoryCategoryRepository>();
 
 
 var app = builder.Build();

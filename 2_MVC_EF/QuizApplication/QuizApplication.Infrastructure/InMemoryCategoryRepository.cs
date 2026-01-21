@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace QuizApplication.Infrastructure
 {
-    internal class InMemoryCategoryRepository
+    internal class InMemoryCategoryRepository : ICategoryRepository
     {
+        private readonly IReadOnlyList<Category> _categories;
         /* This is an in-memory repository, you do NOT need EF for this. */
-        public List<Category> _categories { get; set; }
 
         public InMemoryCategoryRepository()
         {
@@ -37,6 +37,15 @@ namespace QuizApplication.Infrastructure
                 Name = "Geography"
             }
          };
+        }
+        public IReadOnlyList<Category> GetAll()
+        {
+            return _categories;
+        }
+
+        public Category GetById(int id)
+        {
+            return _categories.Single(c => c.Id == id);
         }
     }
 }

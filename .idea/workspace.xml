@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c48f220f-7e8c-4d4f-b9e9-8c6e517610ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/1_LanguageFeatures.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.AppLogic/QuizService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.AppLogic/QuizService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Domain/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Domain/Answer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Domain/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Domain/Question.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/InMemoryCategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/InMemoryCategoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/QuestionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/QuestionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/QuizDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Infrastructure/QuizDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Controllers/QuestionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Controllers/QuestionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/QuestionWithAnswers.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/QuestionWithAnswers.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/QuestionsInCategory.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/Views/Question/QuestionsInCategory.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/2_MVC_EF/QuizApplication/QuizApplication.Web/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/Guts.Tests/RomanNumberConverterTestsTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/Guts.Tests/RomanNumberConverterTestsTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/RomanNumberConverterApp.Ui.Tests/Models/RomanNumberConverterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/RomanNumberConverterApp.Ui.Tests/Models/RomanNumberConverterTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/RomanNumberConverterApp.Ui/Models/RomanNumberConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/3_NUnit/RomanNumberConverterApp/RomanNumberConverterApp.Ui/Models/RomanNumberConverter.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="38a2jJtxID7n7siyIZls2JmRF5z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c48f220f-7e8c-4d4f-b9e9-8c6e517610ce" name="Changes" comment="" />
+      <created>1769023494900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769023494900</updated>
+      <workItem from="1769023496573" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

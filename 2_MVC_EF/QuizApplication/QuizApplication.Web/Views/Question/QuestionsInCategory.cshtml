@@ -1,4 +1,13 @@
-﻿<div class="text-center">
+﻿@model IEnumerable<QuizApplication.Domain.Question>
+
+@foreach (var question in Model)
+{
+    <a href="/Question/QuestionWithAnswers/@question.Id">
+        @question.QuestionString
+    </a>
+}
+
+<div class="text-center">
     <h1 class="display-4">Pick a question:</h1>
     @* make this link work: *@
     <a>Back</a>

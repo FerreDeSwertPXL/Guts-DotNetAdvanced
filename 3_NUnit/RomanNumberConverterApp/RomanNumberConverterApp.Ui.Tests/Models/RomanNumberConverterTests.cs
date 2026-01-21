@@ -1,17 +1,34 @@
 using RomanNumberConverterApp.Ui.Models;
+using NUnit.Framework;
 
 namespace RomanNumberConverterApp.Ui.Tests.Models
 {
     public class RomanNumberConverterTests
     {
-        public void Convert_ValueIsNotBetweenOneAnd3999_ShouldThrowArgumentException()
+        [TestCase(0)]
+        [TestCase(-1)]
+        [TestCase(4000)]
+        public void Convert_ValueIsNotBetweenOneAnd3999_ShouldThrowArgumentException(int value)
         {
-            Assert.Fail("Test not implemented yet.");
+            var converter = new RomanNumberConverter();
+
+            var exception = Assert.Throws<ArgumentException>(() =>
+                converter.Convert(value));
+
+            Assert.That(exception!.Message, Contains.Substring("1 and 3999"));
         }
 
-        public void Convert_ValidValue_ShouldReturnRomanNumberEquivalent()
+        [TestCase(1, "I")]
+        [TestCase(4, "IV")]
+        [TestCase(9, "IX")]
+        [TestCase(58, "LVIII")]
+        [TestCase(1994, "MCMXCIV")]
+        public void Convert_ValidValue_ShouldReturnRomanNumberEquivalent(int value, string expectedRoman)
         {
-            Assert.Fail("Test not implemented yet.");
+            var converter = new RomanNumberConverter();
+            var result = converter.Convert(value);
+
+            Assert.That(result, Is.EqualTo(expectedRoman));
         }
     }
 }

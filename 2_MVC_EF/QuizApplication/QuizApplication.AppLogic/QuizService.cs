@@ -6,21 +6,40 @@ using QuizApplication.Domain;
 
 namespace QuizApplication.AppLogic
 {
-    internal class QuizService
+    internal class QuizService : IQuizService
     {
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly IQuestionRepository _questionRepository;
+
+        public QuizService(ICategoryRepository categoryRepository, IQuestionRepository questionRepository)
+        {
+            _categoryRepository = categoryRepository;
+            _questionRepository = questionRepository;
+        }
+
         public IReadOnlyList<Category> GetAllCategories()
         {
-            throw new NotImplementedException();
+            return _categoryRepository.GetAll();
         }
 
         public Question GetQuestionByIdWithAnswersAndExtra(int id)
         {
-            throw new NotImplementedException();
+            var question = _questionRepository.GetByIdWithAnswers(id);
+
+            bool hasCorrect = question.Answers.Any(a => a.IsCorrect);
+
+            question.Answers.Add(new Answer
+            {
+                AnswerText = "None of the answers is correct.",
+                IsCorrect = !hasCorrect
+            });
+
+            return question;
         }
 
         public IReadOnlyList<Question> GetQuestionsInCategory(int id)
         {
-            throw new NotImplementedException();
+            return _questionRepository.GetByCategoryId(id);
         }
     }
 }
