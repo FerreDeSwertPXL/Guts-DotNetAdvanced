@@ -1,23 +1,59 @@
-﻿namespace CardGames.Domain;
+namespace CardGames.Domain;
 
 public class HigherLowerGame
 {
-    public ICard CurrentCard { get; set; }
-    public ICard PreviousCard { get; set; }
+    private readonly ICardDeck _deck;
 
-    public int NumberOfCorrectGuesses { get; set; }
 
-    public string Motivation { get; set; }
+    public ICard CurrentCard { get; private set; }
+    public ICard? PreviousCard { get; private set; }
 
-    public bool HasWon { get; set; }
 
-    public HigherLowerGame(ICardDeck standardDeck, int requiredNumberOfCorrectGuesses, CardRank minimumRank = CardRank.Ace)
+    public int NumberOfCorrectGuesses { get; private set; }
+    public bool HasWon => NumberOfCorrectGuesses >= _requiredCorrectGuesses;
+    public string? Motivation { get; private set; }
+
+
+    private readonly int _requiredCorrectGuesses;
+
+
+    public HigherLowerGame(ICardDeck deck, int requiredCorrectGuesses, CardRank minimumRank = CardRank.Ace)
     {
-        throw new NotImplementedException("HigherLowerGame constructor not implemented yet.");
+        _requiredCorrectGuesses = requiredCorrectGuesses;
+        _deck = deck.WithoutCardsRankingLowerThan(minimumRank);
+        _deck.Shuffle();
+        CurrentCard = _deck.DealCard();
     }
+
 
     public void MakeGuess(bool higher)
     {
-        throw new NotImplementedException("MakeGuess method not implemented yet.");
+        var next = _deck.DealCard();
+        PreviousCard = CurrentCard;
+
+
+        bool correct = higher
+        ? next.Rank >= CurrentCard.Rank
+        : next.Rank <= CurrentCard.Rank;
+
+
+        if (correct)
+        {
+            NumberOfCorrectGuesses++;
+            int remaining = _requiredCorrectGuesses - NumberOfCorrectGuesses;
+
+
+            Motivation = remaining > 0 && remaining <= 3
+            ? $"Only {remaining} more to go!"
+            : null;
+        }
+        else
+        {
+            NumberOfCorrectGuesses = 0;
+            Motivation = null;
+        }
+
+
+        CurrentCard = next;
     }
 }
